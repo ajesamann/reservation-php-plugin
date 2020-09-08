@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reservation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  margin-top: 20px;
+  border: 1px solid rgb(7, 95, 110);
+  padding: 12px 20px;
+  color: rgb(26, 134, 177);
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+
+#submit:hover {
+  background-color: rgb(7, 95, 110);
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+#error {
+  color: rgb(26, 134, 177);
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+#datetimepicker1 {
+  color: rgb(26, 134, 177);
+}
+
+#datetimepicker1 input {
+  background-color: rgb(238, 238, 238);
+  color: rgb(26, 134, 177);
+}
+
+#party-name,
+#party-size {
+  margin-top: 20px;
+  border: 1px solid rgb(7, 95, 110);
+  padding: 7px 10px;
+  color: rgb(26, 134, 177);
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+}
