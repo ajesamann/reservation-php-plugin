@@ -3,6 +3,11 @@
 include 'config/config.php';
 
 if(isset($_POST['submit'])){
+    //check to make sure all the inputs are filled
+    if(empty($_POST['party-name']) || empty($_POST['party-size']) || empty($_POST['date'])){
+        echo '<div id="error2">Fill in all fields!</div>';
+        return;
+    }
     //query the database and check if a reservation has been made already in that date the user requested
     $checkAllSql = 'SELECT * FROM reservations';
     $stmt = $conn->prepare($checkAllSql);

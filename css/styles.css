@@ -42,6 +42,12 @@ body {
   margin-bottom: 20px;
 }
 
+#error2 {
+  color: rgb(177, 26, 26);
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
 #datetimepicker1 {
   color: rgb(26, 134, 177);
 }
